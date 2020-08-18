@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>ARE YOU SURE YOU WANT TO DELETE "{{item}}"?</p>
+<a href="{% url 'list' %}">CANCEL</a>
+<form method="POST" action="">
+	{% csrf_token %}
+	<input type="submit" name="CONFIRM">
+	
+</form>
+
+</body>
+</html>
